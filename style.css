@@ -1,0 +1,117 @@
+ul {
+
+}
+
+*, *::before, *::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #1F2326;
+    color: #ffffff;
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #1F2326;
+    color: #ffffff;
+    padding-left: 25%;
+    padding-right: 25%;
+    z-index: 10;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul li {
+    float: left;
+    list-style: none;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+ul li:hover {
+    background-color: #0D0D0D;
+}
+
+@media only screen and (orientation: landscape) {
+    #inspire {
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        color: #1F2326;
+        font-family: Tahoma;
+        transform: scale(2);
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    #inspire {
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        color: #1F2326;
+        font-family: Tahoma;
+        transform: scale(2);
+    }
+}
+
+#inspire_overlay {
+    background-color: #B8BEBF;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#home {
+    /*background-color: #6C7173;*/
+    background-image: url("./inspire.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.part {
+    min-height: 100vh;
+    background-color: #1F2326;
+}
+
+.part h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+#testimonials {
+    background-color: #B8BEBF;
+    color: #000000;
+}
+
+footer {
+    padding: 60px;
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
